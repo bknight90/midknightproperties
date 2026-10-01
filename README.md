@@ -67,7 +67,7 @@ The normal website does not require this experimental browser capability.
 ## Design and assets
 
 The page uses the supplied apartment photographs and original green MidKnight
-icon, with forest green, warm ivory, editorial typography, restrained reveals,
+icon, with layered midnight forest and charcoal surfaces, warm ivory type, champagne accents, editorial typography, restrained reveals,
 image transitions and a reduced-motion alternative. Photos have responsive
 WebP sizes; fonts are served locally. Accessible Radix primitives support modal
 focus handling, selects and accordions.
