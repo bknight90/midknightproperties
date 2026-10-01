@@ -1,0 +1,6 @@
+node_modules/
+.vite/
+.DS_Store
+*.local
+.env*
+# dist is intentionally committed: Vercel serves the reviewed static build.
