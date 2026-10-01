@@ -38,8 +38,10 @@ markup to activate the gallery, accordions, navigation and stay planner.
 
 ## Updating the website
 
-- Main page, copy, stay planner and contact placeholders: `src/App.tsx`.
-- Styling, animation and responsive layouts: `src/styles.css`.
+- Main page, stay planner and contact placeholders: `src/App.tsx`.
+- Destination layout and interactive tabs: `src/components/DestinationGuide.tsx`.
+- Southampton attractions, day trips and suggested itineraries: `src/content/southampton.ts`.
+- Styling, animation and responsive layouts: `src/styles.css` and `src/destination.css`.
 - Page metadata: `index.html`.
 - Apartment photography and original brand icon: `public/images/`.
 - Favicon: `public/favicon.svg`.
@@ -78,3 +80,23 @@ stylesheet includes its licence in `vendor/`.
 The Southampton notebook links to the official destination guides used for its
 copy: Visit Southampton Old Town, MDL Ocean Village Marina and SeaCity Museum.
 No walking distances from the apartment are claimed.
+
+## Destination and visual upgrade
+
+The website includes eight Southampton experiences in three interest tabs,
+New Forest, Winchester and Isle of Wight day-trip ideas, three suggested
+itineraries and useful rail, cruise and ferry links. Destination facts were
+checked against official tourism, council, attraction and transport sources on
+1 October 2026. The source register is in `design/destination-sources.md`.
+Itineraries are editorial suggestions, not included tours or promised access.
+
+Three original AI-generated backgrounds create the destination atmosphere:
+`marina-afterglow`, `woodland-morning` and `sunlit-stone-linen`. The marina and
+woodland are clearly captioned as illustrations. They do not depict the rental
+property, its views or a documented named attraction. The supplied property
+photographs remain the hero and the complete apartment gallery.
+
+The full generation prompts are preserved in `design/image-prompts.json`.
+Each background has 640, 960 and 1600 pixel WebP variants. All are lazy-loaded;
+the real apartment hero remains the priority image. New panels support keyboard
+navigation, reduced-motion preferences and responsive layouts.
