@@ -3,5 +3,11 @@
   "framework": null,
   "installCommand": "",
   "buildCommand": "",
-  "outputDirectory": "dist"
+  "outputDirectory": "coming-soon",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }

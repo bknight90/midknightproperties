@@ -100,3 +100,10 @@ The full generation prompts are preserved in `design/image-prompts.json`.
 Each background has 640, 960 and 1600 pixel WebP variants. All are lazy-loaded;
 the real apartment hero remains the priority image. New panels support keyboard
 navigation, reduced-motion preferences and responsive layouts.
+
+## Coming soon mode (temporary)
+
+While the site is being redesigned, `vercel.json` serves the `coming-soon/`
+folder instead of `dist/`, and rewrites every path to its `index.html`.
+To bring the full site back, set `"outputDirectory": "dist"` and remove the
+`rewrites` block in `vercel.json`, then push `main`.

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MidKnight Properties — Coming soon</title>
+  <meta name="description" content="MidKnight Properties, Southampton. Our new website is coming soon.">
+  <meta name="theme-color" content="#0c1c19">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/editorial-regular.otf" as="font" type="font/otf" crossorigin>
+  <style>
+    @font-face{font-family:Editorial;src:url('/fonts/editorial-regular.otf') format('opentype');font-style:normal;font-weight:400;font-display:swap}
+    @font-face{font-family:Editorial;src:url('/fonts/editorial-italic.otf') format('opentype');font-style:italic;font-weight:400;font-display:swap}
+    @font-face{font-family:MidKnightSans;src:url('/fonts/carlito-regular.woff') format('woff');font-style:normal;font-weight:400;font-display:swap}
+    :root{
+      --forest-deep:#0c1c19;--forest:#18342e;--ink:#eee9dc;--body:#c9cfc0;
+      --gold:#d4ba83;--champagne:#dbc99f;--line:#d4ba8340;
+      --ease:cubic-bezier(.2,.7,.2,1);
+      --serif:Editorial,Georgia,'Times New Roman',serif;
+      --sans:MidKnightSans,Arial,Helvetica,sans-serif;
+      color-scheme:dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;background:var(--forest-deep);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased;line-height:1.6}
+    .page{position:relative;min-height:100svh;display:flex;flex-direction:column;overflow:hidden}
+    .bg{position:absolute;inset:0;z-index:-2}
+    .bg img{width:100%;height:100%;object-fit:cover;object-position:62% center;transform:scale(1.06);animation:settle 2.4s var(--ease) forwards}
+    .shade{position:absolute;inset:0;z-index:-1;background:
+      linear-gradient(90deg,#0c1c19f2 0%,#0c1c19c7 42%,#0c1c1966 100%),
+      linear-gradient(0deg,#0c1c19e6 0%,transparent 45%)}
+    .shell{width:calc(100% - 112px);max-width:1328px;margin-inline:auto}
+    header{border-bottom:1px solid #d4ba8326}
+    .header-inner{height:86px;display:flex;align-items:center}
+    .brand{display:inline-flex;align-items:center;gap:13px;color:inherit;text-decoration:none}
+    .brand img{width:48px;height:48px;border:1px solid var(--line);border-radius:50%}
+    .brand-type{display:flex;flex-direction:column;gap:4px;line-height:1}
+    .brand-name{font-family:var(--serif);font-size:1.5rem;letter-spacing:.035em}
+    .brand-sub{font-size:.75rem;letter-spacing:.22em;text-transform:uppercase}
+    main{flex:1;display:flex;align-items:center;padding-block:64px}
+    .eyebrow{display:flex;align-items:center;gap:16px;color:#e2dccb;font-size:.75rem;letter-spacing:.19em;text-transform:uppercase;margin:0 0 34px}
+    .eyebrow::before{content:'';width:30px;height:1px;background:currentColor;opacity:.6}
+    h1{margin:0;font-family:var(--serif);font-weight:400;font-size:clamp(3.4rem,8vw,7rem);line-height:1.02;letter-spacing:-.035em}
+    h1 span{display:block}
+    h1 em{font-style:italic;color:var(--champagne)}
+    .lede{max-width:440px;margin:30px 0 0;color:var(--body);font-size:1.0625rem;line-height:1.8}
+    .rule{display:flex;align-items:center;gap:18px;margin-top:44px;color:var(--gold);font-size:.75rem;letter-spacing:.19em;text-transform:uppercase}
+    .rule::before{content:'';width:64px;height:1px;background:var(--gold)}
+    .reveal{opacity:0;transform:translateY(18px);animation:rise 1s var(--ease) forwards}
+    .d1{animation-delay:.15s}.d2{animation-delay:.3s}.d3{animation-delay:.45s}.d4{animation-delay:.6s}
+    footer{border-top:1px solid #d4ba8326}
+    .footer-inner{display:flex;justify-content:space-between;gap:20px;padding-block:22px 26px;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:#b0b9a7}
+    @keyframes rise{to{opacity:1;transform:none}}
+    @keyframes settle{to{transform:scale(1)}}
+    @media (prefers-reduced-motion:reduce){.reveal,.bg img{animation:none;opacity:1;transform:none}}
+    @media (max-width:720px){
+      .shell{width:calc(100% - 32px)}
+      .header-inner{height:74px}
+      .brand img{width:42px;height:42px}
+      .brand-name{font-size:1.3rem}
+      .shade{background:linear-gradient(0deg,#0c1c19f5 10%,#0c1c19b8 60%,#0c1c1980 100%)}
+      main{align-items:flex-end;padding-block:48px 40px}
+      .lede{font-size:1rem}
+      .footer-inner{flex-direction:column;gap:6px}
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="bg" aria-hidden="true">
+      <img src="/images/apartment-living-2048.webp" srcset="/images/apartment-living-960.webp 960w, /images/apartment-living-2048.webp 2048w" sizes="100vw" alt="">
+    </div>
+    <div class="shade" aria-hidden="true"></div>
+
+    <header>
+      <div class="shell header-inner">
+        <a class="brand" href="/" aria-label="MidKnight Properties">
+          <img src="/images/midknight-mark.svg" alt="" width="48" height="48">
+          <span class="brand-type"><span class="brand-name">MIDKNIGHT</span><span class="brand-sub">Properties</span></span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <div class="shell">
+        <p class="eyebrow reveal d1">A MidKnight stay · Southampton</p>
+        <h1 class="reveal d2"><span>Something new</span><span><em>is coming soon.</em></span></h1>
+        <p class="lede reveal d3">We're refreshing our home online. Our new website is on its way — please check back shortly.</p>
+        <p class="rule reveal d4">Coming soon</p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="shell footer-inner">
+        <span>Southampton, England</span>
+        <span>© <span id="y">2026</span> MidKnight Properties</span>
+      </div>
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
